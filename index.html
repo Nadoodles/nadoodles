@@ -37,6 +37,55 @@
 
 <main id="top">
 
+  <!-- Hero -->
+  <section class="hero">
+    <svg class="hero-arc" viewBox="0 0 1200 600" preserveAspectRatio="none" aria-hidden="true"><path d="M-80 600 C 220 20, 980 20, 1280 600" fill="none" stroke="currentColor" stroke-width="1" vector-effect="non-scaling-stroke"/></svg>
+    <div class="wrap">
+      <div class="hero-top">
+        <h1><span>From busywork</span><span>to business.</span></h1>
+        <div class="hero-side">
+          <p>I'm Jose, a software engineer in Los Angeles. I build websites, automations, and custom tools that take everyday work off your plate.</p>
+          <a class="btn btn-accent btn-pill" href="https://calendly.com/josenadales/chat-with-jose" data-calendly>Book a call <span aria-hidden="true">&rarr;</span></a>
+        </div>
+      </div>
+
+      <div class="hero-pills">
+        <nav class="pill-row" aria-label="Services">
+          <a class="tag-pill" href="#svc-web">Websites</a>
+          <a class="tag-pill" href="#svc-automation">Automation</a>
+          <a class="tag-pill" href="#svc-tools">Custom tools</a>
+          <a class="tag-pill" href="#svc-ai">AI assistants</a>
+          <a class="tag-pill" href="#svc-integrations">Integrations</a>
+        </nav>
+        <div class="pill-row">
+          <a class="tag-pill tag-pill-dark" href="#work">See the work</a>
+          <a class="tag-pill" href="#assessment">How it works</a>
+        </div>
+      </div>
+
+      <div class="hero-cards">
+        <a class="hcard" href="#case-kia">
+          <!-- <img src="images/kia-todd.webp" alt="" loading="lazy" decoding="async"> -->
+          <span class="hcard-ph">Screenshot</span>
+          <span class="hcard-label">Kia Todd Talent Agency</span>
+        </a>
+        <a class="hcard hcard-main" href="#case-westside">
+          <!-- <img src="images/westside-after.webp" alt="" decoding="async"> -->
+          <span class="hcard-ph">Screenshot</span>
+          <span class="hcard-caption">
+            <span><small>Featured project</small><strong>Westside MAPS</strong></span>
+            <span class="hcard-arrow" aria-hidden="true">&#8599;</span>
+          </span>
+        </a>
+        <a class="hcard hcard-light" href="#case-appliance">
+          <!-- <img src="images/appliance-repair.webp" alt="" loading="lazy" decoding="async"> -->
+          <span class="hcard-ph">Screenshot</span>
+          <span class="hcard-label">Appliance repair</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
   <!-- Services -->
   <section id="services" class="services">
     <div class="wrap">
@@ -45,7 +94,7 @@
       <p class="lead lead-light">Five ways I help businesses work smarter. Start with one, or let's look at the whole picture together.</p>
 
       <div class="svc-grid">
-        <article class="svc">
+        <article class="svc" id="svc-web">
           <span class="svc-num">01</span>
           <h3>Get found and win customers</h3>
           <p>A professional website that turns visitors into inquiries and inquiries into customers.</p>
@@ -56,7 +105,7 @@
             <li>Hosting and ongoing care</li>
           </ul>
         </article>
-        <article class="svc">
+        <article class="svc" id="svc-automation">
           <span class="svc-num">02</span>
           <h3>Stop doing it by hand</h3>
           <p>Automate the repetitive work so you can spend your time running the business.</p>
@@ -67,7 +116,7 @@
             <li>Invoice and payment reminders</li>
           </ul>
         </article>
-        <article class="svc">
+        <article class="svc" id="svc-tools">
           <span class="svc-num">03</span>
           <h3>Tools built around your business</h3>
           <p>Software that fits how you actually operate, instead of forcing you into someone else's process.</p>
@@ -78,7 +127,7 @@
             <li>Registration and online payments</li>
           </ul>
         </article>
-        <article class="svc">
+        <article class="svc" id="svc-ai">
           <span class="svc-num">04</span>
           <h3>AI assistants that help</h3>
           <p>Practical AI that answers common questions, sorts inquiries, and handles routine paperwork, with you in control.</p>
@@ -89,7 +138,7 @@
             <li>Document and data extraction</li>
           </ul>
         </article>
-        <article class="svc svc-wide">
+        <article class="svc svc-wide" id="svc-integrations">
           <span class="svc-num">05</span>
           <h3>Make your tools work together</h3>
           <p>Sometimes you don't need anything new. You need someone to look at what you have and figure out what's broken. I connect the tools you already use and find the gaps.</p>
@@ -142,7 +191,7 @@
       <p class="eyebrow">Recent work</p>
       <h2>Real businesses. Real solutions.</h2>
 
-      <article class="case case-featured">
+      <article class="case case-featured" id="case-westside">
         <div class="case-media">
           <!-- Replace this placeholder with:
           <img src="images/westside-after.webp" alt="The new Westside MAPS website" width="1200" height="900" loading="lazy" decoding="async">
@@ -166,7 +215,7 @@
       </article>
 
       <div class="case-row">
-        <article class="case">
+        <article class="case" id="case-kia">
           <div class="case-media case-media-sm">
             <!-- <img src="images/kia-todd.webp" alt="Kia Todd Talent Agency website" width="1200" height="900" loading="lazy" decoding="async"> -->
             <div class="media-placeholder">Kia Todd screenshot</div>
@@ -184,7 +233,7 @@
           </div>
         </article>
 
-        <article class="case">
+        <article class="case" id="case-appliance">
           <div class="case-media case-media-sm">
             <!-- <img src="images/appliance-repair.webp" alt="Appliance repair business website" width="1200" height="900" loading="lazy" decoding="async"> -->
             <div class="media-placeholder">Appliance repair screenshot</div>
