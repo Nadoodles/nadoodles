@@ -1,0 +1,315 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Jose Nadales | Websites for LA Small Businesses</title>
+<meta name="description" content="I build and look after websites for small businesses and nonprofits in Los Angeles. Book a free call.">
+<meta property="og:title" content="Jose Nadales | Websites for LA Small Businesses">
+<meta property="og:description" content="I build and look after websites for small businesses and nonprofits in Los Angeles. Book a free call.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://nadoodles.dev/">
+<!-- TODO: add a 1200x630 preview image, then uncomment:
+<meta property="og:image" content="https://nadoodles.dev/images/og.png">
+-->
+<meta name="theme-color" content="#0f5e5a">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230f5e5a'/%3E%3Ctext x='32' y='43' font-family='Georgia,serif' font-size='32' font-weight='700' fill='%23fff' text-anchor='middle'%3EJN%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://assets.calendly.com">
+<style>
+  :root{
+    --bg:#fbf8f3;
+    --surface:#ffffff;
+    --ink:#1d2421;
+    --muted:#55605b;
+    --accent:#0f5e5a;
+    --accent-hover:#0b4a47;
+    --accent-ink:#ffffff;
+    --soft:#e8f1ee;
+    --line:#e5ded2;
+    --serif:ui-serif,"Iowan Old Style","Palatino Linotype",Palatino,Georgia,serif;
+    --sans:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+    --radius:16px;
+  }
+  *,*::before,*::after{box-sizing:border-box}
+  html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+  @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+  body{margin:0;background:var(--bg);color:var(--ink);font:18px/1.6 var(--sans)}
+  img{max-width:100%;display:block}
+  a{color:var(--accent)}
+  h1,h2,h3{font-family:var(--serif);line-height:1.15;margin:0 0 .5em;font-weight:700;letter-spacing:-.01em}
+  h1{font-size:clamp(2.1rem,7vw,3.6rem)}
+  h2{font-size:clamp(1.7rem,5vw,2.4rem)}
+  h3{font-size:1.3rem}
+  p{margin:0 0 1em}
+  .wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+  section{padding:72px 0;scroll-margin-top:64px}
+  .eyebrow{font-size:.85rem;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--accent);margin-bottom:.75em}
+  .lead{font-size:1.15rem;color:var(--muted);max-width:40rem}
+
+  /* Buttons */
+  .btn{display:inline-flex;align-items:center;justify-content:center;gap:.5em;min-height:52px;padding:0 28px;border-radius:999px;background:var(--accent);color:var(--accent-ink);font-weight:700;font-size:1.05rem;text-decoration:none;transition:background .15s, transform .15s}
+  .btn:hover{background:var(--accent-hover)}
+  .btn:active{transform:scale(.98)}
+  .btn:focus-visible{outline:3px solid var(--ink);outline-offset:3px}
+  .btn-sm{min-height:42px;padding:0 18px;font-size:.95rem}
+  .btn-lg{min-height:60px;padding:0 36px;font-size:1.15rem}
+
+  /* Header */
+  .site-header{position:sticky;top:0;z-index:10;background:rgba(251,248,243,.92);backdrop-filter:saturate(1.4) blur(8px);-webkit-backdrop-filter:saturate(1.4) blur(8px);border-bottom:1px solid var(--line)}
+  .site-header .wrap{display:flex;align-items:center;justify-content:space-between;height:64px}
+  body:has(.calendly-overlay) .site-header{visibility:hidden}
+  .brand{font-family:var(--serif);font-weight:700;font-size:1.2rem;color:var(--ink);text-decoration:none}
+
+  /* Hero */
+  .hero{padding:64px 0 72px}
+  .hero h1{max-width:16ch}
+  .hero .lead{margin-bottom:1.75em}
+  .hero-note{display:block;margin-top:14px;font-size:.95rem;color:var(--muted)}
+
+  /* Case study */
+  .case{background:var(--surface);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+  .compare{display:grid;gap:20px;margin:32px 0 40px}
+  @media (min-width:760px){.compare{grid-template-columns:1fr 1fr}}
+  .compare figure{margin:0}
+  .compare figcaption{font-weight:700;font-size:.9rem;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);margin-bottom:10px}
+  .compare figure.after figcaption{color:var(--accent)}
+  .shot{border-radius:12px;border:1px solid var(--line);overflow:hidden;aspect-ratio:4/3;background:var(--bg);box-shadow:0 10px 30px -18px rgba(0,0,0,.35)}
+  .shot img{width:100%;height:100%;object-fit:cover;object-position:top}
+  .shot-placeholder{display:flex;align-items:center;justify-content:center;height:100%;color:var(--muted);font-size:.95rem;border:2px dashed var(--line);border-radius:12px}
+  .benefits{list-style:none;padding:0;margin:0;display:grid;gap:16px}
+  @media (min-width:760px){.benefits{grid-template-columns:1fr 1fr}}
+  .benefits li{display:flex;gap:14px;align-items:flex-start;background:var(--soft);border-radius:var(--radius);padding:18px 20px}
+  .check{flex:none;width:28px;height:28px;border-radius:50%;background:var(--accent);color:#fff;display:grid;place-items:center;font-size:.9rem;font-weight:700;margin-top:2px}
+  .benefits strong{display:block}
+  .benefits span.desc{color:var(--muted);font-size:1rem}
+  blockquote{margin:40px 0 0;padding:24px 28px;border-left:4px solid var(--accent);background:var(--bg);border-radius:0 var(--radius) var(--radius) 0;font-family:var(--serif);font-size:1.3rem}
+  blockquote cite{display:block;margin-top:10px;font-family:var(--sans);font-style:normal;font-size:.95rem;color:var(--muted)}
+
+  /* Services */
+  .cards{display:grid;gap:20px;margin-top:32px}
+  @media (min-width:860px){.cards{grid-template-columns:repeat(3,1fr)}}
+  .card{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:28px}
+  .card .icon{width:48px;height:48px;border-radius:12px;background:var(--soft);color:var(--accent);display:grid;place-items:center;margin-bottom:16px}
+  .card p{color:var(--muted);margin:0}
+
+  /* Process */
+  .process{background:var(--soft)}
+  .steps{list-style:none;padding:0;margin:32px 0 0;display:grid;gap:20px;counter-reset:step}
+  @media (min-width:860px){.steps{grid-template-columns:repeat(4,1fr)}}
+  .steps li{counter-increment:step;background:var(--surface);border-radius:var(--radius);padding:24px}
+  .steps li::before{content:counter(step);display:grid;place-items:center;width:40px;height:40px;border-radius:50%;background:var(--accent);color:#fff;font-weight:700;font-family:var(--serif);font-size:1.15rem;margin-bottom:14px}
+  .steps p{color:var(--muted);margin:0;font-size:1rem}
+
+  /* About */
+  .about-grid{display:grid;gap:28px;align-items:center}
+  @media (min-width:760px){.about-grid{grid-template-columns:220px 1fr;gap:48px}}
+  .portrait{width:180px;height:180px;border-radius:50%;overflow:hidden;background:var(--accent);color:#fff;display:grid;place-items:center;font-family:var(--serif);font-size:3.5rem;font-weight:700}
+  @media (min-width:760px){.portrait{width:220px;height:220px}}
+  .portrait img{width:100%;height:100%;object-fit:cover}
+
+  /* Book */
+  .book{background:var(--accent);color:#fff;text-align:center}
+  .book h2{color:#fff}
+  .book p{color:rgba(255,255,255,.85);max-width:34rem;margin:0 auto 1.75em}
+  .book .btn{background:#fff;color:var(--accent)}
+  .book .btn:hover{background:var(--soft)}
+  .book .btn:focus-visible{outline-color:#fff}
+
+  /* Footer */
+  footer{padding:28px 0;font-size:.95rem;color:var(--muted)}
+  footer .wrap{display:flex;flex-wrap:wrap;gap:8px 24px;justify-content:space-between}
+  footer a{color:var(--muted)}
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="#top">Jose Nadales</a>
+    <a class="btn btn-sm" href="https://calendly.com/josenadales/chat-with-jose" data-calendly>Book a call</a>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- 1. Hero -->
+  <section class="hero">
+    <div class="wrap">
+      <p class="eyebrow">Los Angeles web design &amp; care</p>
+      <h1>Websites that work as hard as you do.</h1>
+      <p class="lead">I build and look after websites for small businesses and nonprofits in LA, so you can focus on the people you serve.</p>
+      <a class="btn btn-lg" href="https://calendly.com/josenadales/chat-with-jose" data-calendly>Book a free call</a>
+      <span class="hero-note">Pick a time that suits you. No pressure, no jargon.</span>
+    </div>
+  </section>
+
+  <!-- 2. Westside MAPS case study -->
+  <section class="case" id="work">
+    <div class="wrap">
+      <p class="eyebrow">Recent work</p>
+      <h2>Westside MAPS</h2>
+      <p class="lead">Westside MAPS needed a website that looked current, worked on any device, and made it easy for members to join. Here's what changed.</p>
+
+      <div class="compare">
+        <figure>
+          <figcaption>Before</figcaption>
+          <div class="shot">
+            <!-- Replace this placeholder with:
+            <img src="images/westside-before.webp" alt="The old Westside MAPS website" width="1200" height="900" loading="lazy" decoding="async">
+            -->
+            <div class="shot-placeholder">Before screenshot</div>
+          </div>
+        </figure>
+        <figure class="after">
+          <figcaption>After</figcaption>
+          <div class="shot">
+            <!-- Replace this placeholder with:
+            <img src="images/westside-after.webp" alt="The new Westside MAPS website" width="1200" height="900" loading="lazy" decoding="async">
+            -->
+            <div class="shot-placeholder">After screenshot</div>
+          </div>
+        </figure>
+      </div>
+
+      <ul class="benefits">
+        <li><span class="check" aria-hidden="true">✓</span><div><strong>A modern, welcoming design</strong><span class="desc">A clean look that reflects the quality of the organization.</span></div></li>
+        <li><span class="check" aria-hidden="true">✓</span><div><strong>Works beautifully on phones</strong><span class="desc">Easy to read and use on any screen, big or small.</span></div></li>
+        <li><span class="check" aria-hidden="true">✓</span><div><strong>Members sign up and pay online</strong><span class="desc">No more paper forms or chasing checks.</span></div></li>
+        <li><span class="check" aria-hidden="true">✓</span><div><strong>Faster and more secure</strong><span class="desc">Pages load quickly and the site is kept up to date.</span></div></li>
+      </ul>
+
+      <!-- Add a committee quote here once you have one:
+      <blockquote>
+        "Quote from the committee goes here."
+        <cite>Name, Title, Westside MAPS</cite>
+      </blockquote>
+      -->
+    </div>
+  </section>
+
+  <!-- 3. What I do -->
+  <section id="services">
+    <div class="wrap">
+      <p class="eyebrow">What I do</p>
+      <h2>Everything your website needs</h2>
+      <div class="cards">
+        <article class="card">
+          <div class="icon" aria-hidden="true"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18"/><path d="M7 6.5h.01M10 6.5h.01"/></svg></div>
+          <h3>New websites &amp; redesigns</h3>
+          <p>A fresh, professional site that's easy to use on phones and computers, built around what your clients need to find.</p>
+        </article>
+        <article class="card">
+          <div class="icon" aria-hidden="true"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg></div>
+          <h3>Monthly care</h3>
+          <p>Updates, content changes, security, and quick responses when you need something. You'll always have someone to call.</p>
+        </article>
+        <article class="card">
+          <div class="icon" aria-hidden="true"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/><path d="m9 16 2 2 4-4"/></svg></div>
+          <h3>Custom tools</h3>
+          <p>Memberships, online payments, directories, and booking, set up to fit the way your business already works.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. How working with me goes -->
+  <section class="process" id="process">
+    <div class="wrap">
+      <p class="eyebrow">How it works</p>
+      <h2>Simple, clear, and I stick around</h2>
+      <ol class="steps">
+        <li><h3>A quick call</h3><p>We talk about your business, your current site, and what you'd like it to do.</p></li>
+        <li><h3>A clear plan &amp; price</h3><p>You get a written plan and a price up front, before any work starts.</p></li>
+        <li><h3>The build</h3><p>I build your site and keep you in the loop. You review everything before it goes live.</p></li>
+        <li><h3>Ongoing care</h3><p>After launch I'm still here for updates, fixes, and questions. I don't disappear.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- 5. About -->
+  <section id="about">
+    <div class="wrap about-grid">
+      <div class="portrait">
+        <!-- Replace the initials with your photo:
+        <img src="images/jose.webp" alt="Jose Nadales" width="440" height="440" loading="lazy" decoding="async">
+        -->
+        <span aria-hidden="true">JN</span>
+      </div>
+      <div>
+        <p class="eyebrow">About me</p>
+        <h2>Hi, I'm Jose.</h2>
+        <p>I'm a software engineer based here in Los Angeles. I use that experience to give local small businesses and nonprofits websites that look great and keep working.</p>
+        <p>When you work with me, you work with me directly. You'll always know who to call.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. Book -->
+  <section class="book" id="book">
+    <div class="wrap">
+      <h2>Let's talk about your website</h2>
+      <p>Book a free call at a time that works for you. We'll talk through what you need, and you'll leave with clear next steps.</p>
+      <a class="btn btn-lg" href="https://calendly.com/josenadales/chat-with-jose" data-calendly>Book a free call</a>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 Jose Nadales · Los Angeles, CA</span>
+    <!-- Add your engineering portfolio link for recruiters:
+    <a href="https://github.com/your-username">Engineering work</a>
+    -->
+  </div>
+</footer>
+
+<script>
+  // Load Calendly only when someone shows interest in booking, so the page stays fast.
+  // If Calendly can't load, the link simply opens the booking page instead.
+  (function () {
+    var BRAND = "0f5e5a";
+    var loading = null;
+
+    function loadCalendly() {
+      if (loading) return loading;
+      loading = new Promise(function (resolve, reject) {
+        var css = document.createElement("link");
+        css.rel = "stylesheet";
+        css.href = "https://assets.calendly.com/assets/external/widget.css";
+        document.head.appendChild(css);
+        var js = document.createElement("script");
+        js.src = "https://assets.calendly.com/assets/external/widget.js";
+        js.async = true;
+        js.onload = resolve;
+        js.onerror = reject;
+        document.head.appendChild(js);
+      });
+      return loading;
+    }
+
+    document.querySelectorAll("[data-calendly]").forEach(function (link) {
+      ["pointerenter", "touchstart", "focus"].forEach(function (evt) {
+        link.addEventListener(evt, loadCalendly, { once: true, passive: true });
+      });
+
+      link.addEventListener("click", function (e) {
+        if (e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return;
+        e.preventDefault();
+        var done = false;
+        var fallback = function () { if (!done) { done = true; window.location.href = link.href; } };
+        var timer = setTimeout(fallback, 5000);
+        loadCalendly().then(function () {
+          if (done || !window.Calendly) return fallback();
+          done = true;
+          clearTimeout(timer);
+          window.Calendly.initPopupWidget({
+            url: link.href + "?hide_gdpr_banner=1&primary_color=" + BRAND
+          });
+        }).catch(function () { clearTimeout(timer); fallback(); });
+      });
+    });
+  })();
+</script>
+</body>
+</html>
