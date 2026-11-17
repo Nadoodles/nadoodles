@@ -18,8 +18,8 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preconnect" href="https://assets.calendly.com">
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css?v=2">
-<script src="script.js?v=2" defer></script>
+<link rel="stylesheet" href="style.css?v=5">
+<script src="script.js?v=5" defer></script>
 </head>
 <body>
 
@@ -30,6 +30,7 @@
       <a href="#services">Services</a>
       <a href="#work">Work</a>
       <a href="#about">About</a>
+      <a href="faq.html">FAQ</a>
     </nav>
     <a class="btn btn-accent btn-sm" href="https://calendly.com/josenadales/chat-with-jose" data-calendly>Book a call</a>
   </div>
@@ -60,27 +61,28 @@
         <div class="pill-row">
           <a class="tag-pill tag-pill-dark" href="#work">See the work</a>
           <a class="tag-pill" href="#assessment">How it works</a>
+          <a class="tag-pill" href="faq.html">FAQ</a>
         </div>
       </div>
 
       <div class="hero-cards">
         <a class="hcard" href="#case-kia">
-          <!-- <img src="images/kia-todd.webp" alt="" loading="lazy" decoding="async"> -->
-          <span class="hcard-ph">Screenshot</span>
+          <img src="images/kia-mobile.webp" alt="" width="600" height="1298" decoding="async">
           <span class="hcard-label">Kia Todd Talent Agency</span>
         </a>
         <a class="hcard hcard-main" href="#case-westside">
-          <!-- <img src="images/westside-after.webp" alt="" decoding="async"> -->
-          <span class="hcard-ph">Screenshot</span>
+          <picture>
+            <source media="(max-width:899px)" srcset="images/westside-mobile.webp">
+            <img src="images/westside-desktop.webp" alt="" width="1440" height="835" decoding="async" fetchpriority="high">
+          </picture>
           <span class="hcard-caption">
             <span><small>Featured project</small><strong>Westside MAPS</strong></span>
             <span class="hcard-arrow" aria-hidden="true">&#8599;</span>
           </span>
         </a>
-        <a class="hcard hcard-light" href="#case-appliance">
-          <!-- <img src="images/appliance-repair.webp" alt="" loading="lazy" decoding="async"> -->
-          <span class="hcard-ph">Screenshot</span>
-          <span class="hcard-label">Appliance repair</span>
+        <a class="hcard" href="#case-bods">
+          <img src="images/bods-mobile.webp" alt="" width="600" height="1298" decoding="async">
+          <span class="hcard-label">Bods by Todd</span>
         </a>
       </div>
     </div>
@@ -193,10 +195,7 @@
 
       <article class="case case-featured" id="case-westside">
         <div class="case-media">
-          <!-- Replace this placeholder with:
-          <img src="images/westside-after.webp" alt="The new Westside MAPS website" width="1200" height="900" loading="lazy" decoding="async">
-          -->
-          <div class="media-placeholder">Westside MAPS screenshot</div>
+          <img src="images/westside-desktop.webp" alt="Westside MAPS home page" width="1440" height="835" loading="lazy" decoding="async">
         </div>
         <div class="case-body">
           <span class="tag">Business operations &amp; digital experience</span>
@@ -208,6 +207,7 @@
             <li>Online registration and payments</li>
             <li>Admin tools for meetings, sponsors, and communications</li>
           </ul>
+          <a class="visit" href="https://westsidemaps.pages.dev/" target="_blank" rel="noopener">Visit the site <span aria-hidden="true">&#8599;</span></a>
           <!-- Add a committee quote once you have one:
           <blockquote>"Quote goes here." <cite>Name, Westside MAPS</cite></blockquote>
           -->
@@ -217,8 +217,7 @@
       <div class="case-row">
         <article class="case" id="case-kia">
           <div class="case-media case-media-sm">
-            <!-- <img src="images/kia-todd.webp" alt="Kia Todd Talent Agency website" width="1200" height="900" loading="lazy" decoding="async"> -->
-            <div class="media-placeholder">Kia Todd screenshot</div>
+            <img src="images/kia-desktop.webp" alt="Kia Todd Talent Agency home page" width="1440" height="900" loading="lazy" decoding="async">
           </div>
           <div class="case-body">
             <span class="tag">Custom digital platform</span>
@@ -230,24 +229,25 @@
               <li>Organized talent categories</li>
             </ul>
             <p class="planned"><span>Next up</span> Self-service updates for the agency team</p>
+            <a class="visit" href="https://nadoodles.github.io/kiatoddtalentagency/index.html" target="_blank" rel="noopener">Visit the site <span aria-hidden="true">&#8599;</span></a>
           </div>
         </article>
 
-        <article class="case" id="case-appliance">
+        <article class="case" id="case-bods">
           <div class="case-media case-media-sm">
-            <!-- <img src="images/appliance-repair.webp" alt="Appliance repair business website" width="1200" height="900" loading="lazy" decoding="async"> -->
-            <div class="media-placeholder">Appliance repair screenshot</div>
+            <img src="images/bods-desktop.webp" alt="Bods by Todd home page" width="1440" height="900" loading="lazy" decoding="async">
           </div>
           <div class="case-body">
             <span class="tag">Customer acquisition</span>
-            <h3>Local appliance repair business</h3>
-            <p>A professional site that makes it easy for customers to see the services and get in touch.</p>
+            <h3>Bods by Todd</h3>
+            <p>A coach with nearly 30 years of experience needed a site that shows it and makes it easy for families to sign up.</p>
             <ul class="delivered">
-              <li>Clear service pages</li>
-              <li>Works great on phones</li>
-              <li>Simple contact and inquiry paths</li>
+              <li>Separate paths for adult training and youth football</li>
+              <li>Reviews and photo gallery that build trust</li>
+              <li>Clear "Get Started" and tap-to-call contact</li>
+              <li>Built for phones first</li>
             </ul>
-            <p class="planned"><span>Next up</span> Local search visibility</p>
+            <a class="visit" href="https://coachbodsbytodd.com/" target="_blank" rel="noopener">Visit the site <span aria-hidden="true">&#8599;</span></a>
           </div>
         </article>
       </div>
@@ -319,6 +319,7 @@
 <footer class="site-footer">
   <div class="wrap footer-inner">
     <span>© 2026 Jose Nadales · Los Angeles, CA</span>
+    <a href="faq.html">Questions? Read the FAQ</a>
     <!-- Add your engineering portfolio link for recruiters:
     <a href="https://github.com/your-username">Engineering work</a>
     -->
